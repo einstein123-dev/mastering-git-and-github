@@ -14,3 +14,7 @@ print(squared_numbers)
 
 squared_numbers1 = [x **2 for x in range(1,10)]
 print(squared_numbers1)
+
+message = f"You are {squared_numbers1[3]} years old in squared numbers."
+print(message)
+
