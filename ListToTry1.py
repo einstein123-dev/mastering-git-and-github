@@ -31,6 +31,25 @@ someOfMyFriends.insert(2, "Grace")
 print(someOfMyFriends)
 
 #removing a friend from the list using the del statement
-del someOfMyFriends[3
-                    ]
+del someOfMyFriends[3]
 print(someOfMyFriends)
+
+#list of possible dinner guests celebrities living and dead
+dinnerGuests = ["Albert Einstein", "Marie Curie", "Isaac Newton", "Leonardo da Vinci", "Ada Lovelace", "Sarkodie","joe metella"]
+
+message1 = f"Hello {dinnerGuests[5]}, I would like to invite you to dinner."
+message2 = f"Hello {dinnerGuests[6]}, I would like to invite you to dinner."
+print(message1)
+print(message2)
+unavailable_guest = dinnerGuests.pop(5)
+dinnerGuests.insert(5, "Kofi Annan")
+message3 = f"Hello {dinnerGuests[5]}, I would like to invite you to dinner."
+print(message3)
+
+print(dir(dinnerGuests))
+
+def greet():
+    for guest in dinnerGuests:
+        print(f"Hello {guest}, I would like to invite you to dinner.")
+
+greet()
