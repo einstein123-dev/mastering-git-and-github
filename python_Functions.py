@@ -28,6 +28,22 @@ def write_log(messege):
 write_log("how are you doing")
 
 
+#clean an email and split it into usernamr and domain
+
+def cln_split_email(email):
+     clean = email.strip().lower()
+     name,domain = clean.split("@")
+     return {"name":name,"domain":domain}
+
+print(cln_split_email("richardeinstein40@gmail.com"))
+
+def clean_data(email):
+     clean = email.strip().lower()
+     name,domain = clean.split("@")
+     return {"username":name,"Domain":domain}
+print(clean_data("einsteinamanfo@gmail.com"))
+    
+
 
 
 #example object cars
