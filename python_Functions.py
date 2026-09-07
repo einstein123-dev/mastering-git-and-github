@@ -43,7 +43,14 @@ def clean_data(email):
      return {"username":name,"Domain":domain}
 print(clean_data("einsteinamanfo@gmail.com"))
     
+#check if email has a basic valid format
 
+
+def email_validation(email):
+     return ("@" in email and "." in email)
+
+print(email_validation("richard@gmail"))
+     
 
 
 #example object cars
